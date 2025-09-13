@@ -26,6 +26,6 @@ int main(int argc, char* argv[])
   dat.pop_back();
   std::cout << "after pops, size: " << dat.size() << std::endl; //1
   std::cout << "remaining: " << dat.front() << std::endl; //7
-  return 0
+  return 0;
   
 }

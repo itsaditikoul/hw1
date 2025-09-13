@@ -59,7 +59,7 @@ void ULListStr::push_back(const std::string& val)
 
 void ULListStr::push_front(const std::string& val)
 {
-  if (head_=NULL){
+  if (head_==NULL){
     // list empty - allocate new Item
     head_ = new Item();
     tail_ = head_;
