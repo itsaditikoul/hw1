@@ -40,5 +40,23 @@ int main(int argc, char* argv[])
   std::cout << "evens: ";
   printList(evens); //24
 
+
+
+
+
+  // correcting the valgrind error
+  while (odds != NULL) {
+    Node* temp=odds;
+    odds = odds-> next;
+    delete temp;
+  }
+
+  while (evens != NULL) {
+    Node* temp = evens;
+    evens=evens->next;
+    delete temp;
+  }
+
+
   return 0;
 }
